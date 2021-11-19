@@ -1,0 +1,39 @@
+.master-card{
+    box-shadow: 0 0 5px lightgrey;
+    padding: 1.5rem 0.5rem;
+    position: relative;
+    @include easeInOut;
+    overflow: hidden;
+    min-height: 150px;
+    &:after, &:before{
+        position: absolute;
+        content: '';
+        background: $secondary-color;
+        height: 6px;
+        width: 90%;
+        right: 15px;
+        left: 15px;
+        @include easeInOut;
+    }
+    &:after{
+        bottom: 0;
+        transform: translateY(10px);
+    }
+    &:before{
+        top: 0;
+    }
+    &:hover{
+        transform: translateY(-10px);
+        &:after{
+            transform: translateY(0);
+        }
+        &:before{
+            transform: translateY(-10px);
+
+        }
+    }
+
+    .title{
+        font-weight: bold;
+    }
+}

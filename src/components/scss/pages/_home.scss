@@ -1,0 +1,22 @@
+// Home Page
+.home-page{
+    .main-header{
+       span{
+           color: $primary-color;
+       }
+    }
+    .question-header{
+        font-weight: bold
+    }
+    .answer-container{
+        li{
+            @include easeInOut;
+    
+            &:hover{
+                cursor: pointer;
+                color: $primary-color;
+                padding-inline-start: .5rem;
+            }
+        }
+    }
+}

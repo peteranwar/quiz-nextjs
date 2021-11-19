@@ -1,0 +1,35 @@
+footer{
+    background-color: #222;
+    color: #757575;
+
+    .description{
+        font-size: 14px;
+    }
+    .phone{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    .mail{
+        color: #757575;
+        font-size: 12px;
+        margin-top: -8px;
+
+    }
+
+    .main-header{
+        color: white;
+        font-size: 20px;
+
+    }
+    ul {
+        a{
+            color: #757575;
+            font-size: 14px;
+            @include easeInOut;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// style main header
+.main-header{
+    font-size: calc($large-heading + 6px);
+    font-weight: bold;
+    position: relative;
+    max-width: max-content;
+    color: $text-color;
+    &:after{
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 5px;
+        background-color: $secondary-color;
+        bottom: -15px;
+        left: 0;
+        border-radius: 5px;
+        @include easeInOut
+    }
+    &:hover{
+        &:after{
+            width: 100%;
+        }
+    }
+
+   
+}
+
+
+// style main button
+.btn-primary {
+    background: $primary-color;
+    &:hover{
+        background: darken($primary-color, 20);
+
+    }
+}

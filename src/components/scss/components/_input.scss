@@ -1,0 +1,36 @@
+.auth-input{
+    color: $text-color;
+   
+    input{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding: 1rem;
+        font-size: 18px;
+        border: 1px solid ;
+        width: 100%;
+        margin: auto;
+        display: block;
+        border-radius: 5px;
+        height: 48px;
+        background-color: white;
+        &:focus{
+            outline: none;
+            border: 1px solid darken($secondary-color, 20);
+        }
+        &::placeholder{
+                color: $text-color;
+        }
+    }
+
+    textarea{
+        min-height: 200px;
+    }
+
+ 
+
+   
+  }
+  .error{
+    font-size: 15px;
+    color: red;
+  }

@@ -1,0 +1,6 @@
+@mixin easeInOut {
+    transition: all .5s ease;
+  }
+// Minxins
+@import "./media-query";
+
